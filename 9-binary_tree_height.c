@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * binary_tree_height -  creates a binary tree node.
+ * binary_tree_height - func creates a binary tree node.
  *
  * @tree: pointer to the parent node of the node to create.
  *
