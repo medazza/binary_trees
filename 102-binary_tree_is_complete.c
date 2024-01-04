@@ -7,16 +7,15 @@
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
-	int flag;
+	int flag = 0;
+	queue_node_t *front = NULL, *rear = NULL;
+	const binary_tree_t *current = front->node;
 
 	if (!tree)
 		return (0);
-	flag = 0;
-	queue_node_t *front = NULL, *rear = NULL;
 	enqueue(&front, &rear, tree);
 	while (front != NULL)
 	{
-		const binary_tree_t *current = front->node;
 		if (flag && current != NULL)
 			return (0);
 		if (!current)
