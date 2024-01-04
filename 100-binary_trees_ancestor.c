@@ -2,9 +2,8 @@
 
 int binary_tree_is_descendant(const binary_tree_t *node, const
 		binary_tree_t *ancestor);
-
 /**
- * binary_trees_ancestor - Find the lowest common ancestor of two nodes
+ * binary_trees_ancestor - func find the lowest common ancestor of two nodes
  * @first: Pointer to the first node
  * @second: Pointer to the second node
  *
@@ -17,25 +16,20 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const
 
 	if (!first || !second)
 		return (NULL);
-
 	if (first == second)
 		return ((binary_tree_t *)first);
-
 	if (binary_tree_is_descendant(second, first))
 		return ((binary_tree_t *)first);
 	if (binary_tree_is_descendant(first, second))
 		return ((binary_tree_t *)second);
-
 	ancestor = binary_trees_ancestor(first->parent, second);
-
 	if (!ancestor)
 		return (binary_trees_ancestor(first, second->parent));
-
 	return (ancestor);
 }
 
 /**
- * binary_tree_is_descendant - Check if one node is a descendant of another
+ * binary_tree_is_descendant - func check if one node is a descendant of another
  * @node: Potential descendant
  * @ancestor: Potential ancestor
  *
@@ -47,9 +41,7 @@ int binary_tree_is_descendant(const binary_tree_t *node,
 {
 	if (node == NULL || ancestor == NULL)
 		return (0);
-
 	if (node == ancestor)
 		return (1);
-
 	return (binary_tree_is_descendant(node->parent, ancestor));
 }
