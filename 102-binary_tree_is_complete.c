@@ -7,10 +7,11 @@
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
-	int flag = 0;
+	int flag;
 
 	if (!tree)
 		return (0);
+	flag = 0;
 	queue_node_t *front = NULL, *rear = NULL;
 	enqueue(&front, &rear, tree);
 	while (front != NULL)
