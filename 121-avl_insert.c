@@ -46,10 +46,11 @@ avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval)
 	return (*tree);
 }
 /**
- * avl_insert - func inserts a value into an AVL tree.
- * @tree: type **pointer to the root node of the AVL tree to insert into.
- * @value: value to store in the node to be inserted
- * Return: inserted node, or NULL if fails.
+ * avl_insert - function that inserts a value in an AVL Tree.
+ * @tree: double pointer to the root node of the AVL tree
+ * for inserting the value.
+ * @value: value to store in the node to be inserted.
+ * Return: inserted node, or NULL if failure.
  */
 avl_t *avl_insert(avl_t **tree, int value)
 {

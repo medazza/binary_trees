@@ -5,7 +5,6 @@
  * @tree: tree to go through
  * Return: the height
  */
-
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	size_t l = 0;
@@ -31,6 +30,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
  * @lower: node that point to the lower node selected.
  * Return: 1 if tree is AVL, 0 if not.
  */
+
 int bal_avl(const binary_tree_t *tree, int lower, int high)
 {
 	size_t height_l, height_r, balancer;
@@ -51,9 +51,10 @@ int bal_avl(const binary_tree_t *tree, int lower, int high)
 }
 
 /**
- * binary_tree_is_avl - func checks if a binary tree is a valid AVL tree.
+ * binary_tree_is_avl - function that checks if a
+ * binary tree is a valid AVL Tree
  * @tree: node that point to the tree to check.
- * Return: 1 if tree is AVL, 0 if not.
+ * Return: 1 if tree is a valid AVL Tree, and 0 otherwise.
  */
 int binary_tree_is_avl(const binary_tree_t *tree)
 {

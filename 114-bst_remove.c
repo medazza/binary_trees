@@ -16,11 +16,13 @@ bst_t *bst_min_value_node(bst_t *node)
 }
 
 /**
- * bst_remove - func removes a node from a Binary Search Tree.
- * @root: Pointer to the root node of the tree.
+ * bst_remove -  function that removes a node from a
+ * Binary Search Tree.
+ * @root: Pointer to the root node of the tree
+ * where you will remove a node.
  * @value: The value to remove from the tree.
- * Return: Pointer to the new root node
- * after removing the desired value.
+ * Return: pointer to the new root node of the tree
+ * after removing the desired value
  */
 bst_t *bst_remove(bst_t *root, int value)
 {
@@ -35,7 +37,7 @@ bst_t *bst_remove(bst_t *root, int value)
 		if (root->left == NULL)
 		{
 			bst_t *temp = root->right;
-
+			
 			free(root);
 			return (temp);
 		}

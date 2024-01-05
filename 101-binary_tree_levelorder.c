@@ -1,9 +1,9 @@
 #include "binary_trees.h"
 /**
- * binary_tree_levelorder - funct that goes through a
- * binary tree using level-order traversal
- * @tree: a pointer to the root node of the tree to traverse
- * @func: a pointer to a function to call for each node
+ * binary_tree_levelorder - function that goes through a binary tree
+ * using level-order traversal
+ * @tree: a pointer to the root node of the tree to traverse.
+ * @func: a pointer to a function to call for each node.
  */
 
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
@@ -54,11 +54,11 @@ void enqueue(queue_node_t **front, queue_node_t **rear,
  */
 void dequeue(queue_node_t **front)
 {
-	queue_node_t *temp;
+	queue_node_t *tmp;
 
 	if (*front == NULL)
 		return;
-	temp = *front;
+	tmp = *front;
 	*front = (*front)->next;
-	free(temp);
+	free(tmp);
 }

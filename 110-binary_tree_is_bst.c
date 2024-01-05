@@ -18,8 +18,8 @@ int is_bst_util(const binary_tree_t *tree, int min, int max)
 }
 
 /**
- * binary_tree_is_bst - func checks if a binary tree is a
- * valid Binary Search Tree (BST).
+ * binary_tree_is_bst - function that checks if a binary tree
+ * is a valid Binary Search Tree
  * @tree: Pointer to the root node of the tree to check.
  * Return: 1 if the tree is a valid BST, 0 otherwise.
  */

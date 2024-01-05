@@ -1,9 +1,7 @@
 #include "binary_trees.h"
 /**
- * binary_tree_depth - func creates a binary tree node.
- *
- * @tree: pointer to the parent node of the node to create.
- *
+ * binary_tree_depth - function that measures the depth of a node in a binary tree.
+ * @tree: pointer to the node to measure the depth.
  * Return: pointer to the new node, or NULL on failure
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
